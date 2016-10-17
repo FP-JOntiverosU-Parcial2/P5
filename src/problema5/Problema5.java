@@ -35,10 +35,10 @@ public class Problema5 {
             divisores++;
         }
     }
-    if (divisores !=2){ System.out.println("El numero no es primo");
+    if (divisores ==2){ System.out.println("El numero es primo");
     }
     else{
-        System.out.println("El numero es primo");
+        System.out.println("El numero no es primo");
     }
     return n;
     }
