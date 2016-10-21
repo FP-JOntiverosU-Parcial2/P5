@@ -16,9 +16,9 @@ public class Problema5 {
      */
     public static void main(String[] args) {
         int n,o;
-        n=solicitarNumero();
-        o=operacion(n);
-        
+        n=solicitarNumero();   //solicitamos numero
+        o=operacion(n);  //operacion
+        mensajeSalida();
     }
     public static int solicitarNumero(){
     int n;
@@ -29,17 +29,21 @@ public class Problema5 {
     }
     
     public static int operacion(int n){
-       int i,divisores=0;
-    for (i= 1; i<=n; i++){
-        if(n%i==0){
+       int i,divisores=0;          
+    for (i= 1; i<=n; i++){    //se dividiran entre todos los numeros posibles si mod es cero...
+        if(n%i==0){           //se sumara un divisor
             divisores++;
         }
     }
-    if (divisores ==2){ System.out.println("El numero es primo");
+    if (divisores ==2){ System.out.println("El numero es primo");   //si solo hay dos divisores es primo
     }
     else{
         System.out.println("El numero no es primo");
     }
     return n;
     }
+    public static void mensajeSalida(){
+        System.out.println("Gracias por usar el programa"); //se agradece
+        System.exit(0);//Sale del programa
+    }          
 }
